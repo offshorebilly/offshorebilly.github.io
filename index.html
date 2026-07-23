@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zhou Chenlin — Robotics Engineering student at HIT Shenzhen. SolidWorks 3D modeling, mechanical design, and engineering portfolio.">
+  <title>Zhou Chenlin / 周辰霖</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" data-i18n="nav.logo">Zhou Chenlin</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about"    data-i18n="nav.about">关于</a>
+        <a href="#projects" data-i18n="nav.projects">项目</a>
+        <a href="#skills"   data-i18n="nav.skills">技能</a>
+        <a href="#contact"  data-i18n="nav.contact">联系</a>
+      </nav>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+      <button class="nav-menu-btn" id="menu-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-greeting" data-i18n="hero.greeting">你好，我是</p>
+      <h1 class="hero-name" data-i18n="hero.name">周辰霖</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">机器人工程 · SolidWorks 三维建模</p>
+      <p class="hero-tagline" data-i18n="hero.tagline">将工程精度转化为视觉艺术</p>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading reveal" data-i18n="about.heading">关于我</h2>
+          <div class="section-divider reveal"></div>
+          <p class="reveal" data-i18n="about.p1">哈尔滨工业大学（深圳）机器人工程专业大三学生，专注于机械设计与三维建模。</p>
+          <p class="reveal" data-i18n="about.p2">精通 SolidWorks 建模、装配体设计及工程图纸输出。项目经验涵盖摩托车悬挂系统、减震器逆向工程、外骨骼机器人、工业产品设计等多个领域。</p>
+          <p class="reveal" data-i18n="about.p3">曾为美国客户独立完成减震器联板部件设计，从三维建模到制造交付全流程负责，具备国际协作与工程落地能力。</p>
+          <div class="about-badge reveal">
+            <span class="badge-icon">◆</span>
+            <span data-i18n="about.badge">SolidWorks 专家级建模</span>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <img src="images/about.webp" alt="Engineering render" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-heading reveal" data-i18n="projects.heading">项目作品</h2>
+      <div class="section-divider reveal"></div>
+
+      <!-- Filter tabs filled by JS -->
+      <div class="filter-bar reveal" id="filter-bar"></div>
+
+      <!-- Gallery grid filled by JS -->
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-heading reveal" data-i18n="skills.heading">技能</h2>
+      <div class="section-divider reveal"></div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">&#9675;</div>
+          <h3 data-i18n="skills.s1name">SolidWorks</h3>
+          <p data-i18n="skills.s1desc">零件建模 · 装配体 · 工程图 · 曲面造型 · 运动仿真</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">&#9678;</div>
+          <h3 data-i18n="skills.s2name">KeyShot / 渲染</h3>
+          <p data-i18n="skills.s2desc">产品级渲染 · 材质与光照 · 透视截面展示</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">&#9702;</div>
+          <h3 data-i18n="skills.s3name">工程制图</h3>
+          <p data-i18n="skills.s3desc">工程图纸 · GD&T · STEP/STL 格式转换</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">&#9636;</div>
+          <h3 data-i18n="skills.s4name">原型制造</h3>
+          <p data-i18n="skills.s4desc">3D 打印 · CNC 加工 · 装配验证</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section-heading reveal" data-i18n="experience.heading">经历</h2>
+      <div class="section-divider reveal"></div>
+      <div class="exp-list">
+        <div class="exp-item reveal">
+          <div class="exp-marker"></div>
+          <div class="exp-content">
+            <span class="exp-tag" data-i18n="experience.i1tag">兼职项目</span>
+            <h3 data-i18n="experience.i1title">美国客户减震器联板设计</h3>
+            <p data-i18n="experience.i1desc">独立完成摩托车减震器上下联板零件设计。根据客户规格从零建模，输出 STEP 工程文件交付美国客户制造，涵盖右前叉、左前叉、方向柱、联板等多个关键部件。</p>
+          </div>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-marker"></div>
+          <div class="exp-content">
+            <span class="exp-tag" data-i18n="experience.i2tag">比赛项目</span>
+            <h3 data-i18n="experience.i2title">螺旋桨叶片设计</h3>
+            <p data-i18n="experience.i2desc">使用 SolidWorks 高级曲面功能进行螺旋桨叶片参数化建模，生成精确工程图纸用于 CFD 仿真验证。</p>
+          </div>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-marker"></div>
+          <div class="exp-content">
+            <span class="exp-tag" data-i18n="experience.i3tag">年度项目</span>
+            <h3 data-i18n="experience.i3title">可折叠家具 — 大一年度创新项目</h3>
+            <p data-i18n="experience.i3desc">设计可折叠收纳家具方案，完成从概念草图到三维建模、工程图纸及中期/结题报告全过程，获年度项目立项支持。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-heading reveal" data-i18n="contact.heading">联系</h2>
+      <div class="section-divider reveal"></div>
+      <p class="contact-text reveal" data-i18n="contact.text">欢迎通过邮件与我联系</p>
+      <a class="contact-email reveal" href="mailto:offshorebilly225@gmail.com">offshorebilly225@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer.copy">© 2026 Zhou Chenlin. All rights reserved.</p>
+      <p class="footer-school" data-i18n="footer.school">哈尔滨工业大学（深圳）· 机器人工程</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&lsaquo;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next">&rsaquo;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+    <div class="lightbox-info">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-desc"></p>
+      <span id="lightbox-cat"></span>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
