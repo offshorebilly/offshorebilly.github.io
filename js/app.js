@@ -1,6 +1,7 @@
 /* ============================================================
    Zhou Chenlin — Personal Website
    JS: i18n, gallery, lightbox, scroll animations
+   Updated: German client, RoboMaster, YVA, exoskeleton project
    ============================================================ */
 
 // -------- i18n Content Data --------
@@ -21,19 +22,19 @@ const content = {
     },
     about: {
       heading: '关于我',
-      p1: '哈尔滨工业大学（深圳）机器人工程专业大三学生，专注于机械设计与三维建模。',
-      p2: '精通 SolidWorks 建模、装配体设计及工程图纸输出。项目经验涵盖摩托车悬挂系统、减震器逆向工程、外骨骼机器人、工业产品设计等多个领域。',
-      p3: '曾为美国客户独立完成减震器联板部件设计，从三维建模到制造交付全流程负责，具备国际协作与工程落地能力。',
+      p1: '哈尔滨工业大学（深圳）机器人工程专业大三学生，专注于机械设计与三维建模。现任校青年志愿者协会义卖部副部长，南工骁鹰机器人战队正式队员。',
+      p2: '精通 SolidWorks 建模、装配体设计及工程图纸输出。项目经验涵盖摩托车悬挂系统与减震器设计（德国客户）、外骨骼机器人、工业产品设计、可折叠家具等多个领域。',
+      p3: '曾为德国客户独立完成减震器上下联板等关键零部件设计，从三维建模到制造交付（STEP 文件）全流程负责，具备国际协作与工程落地能力。',
+      p4: '在 2024 年 RoboMaster 机甲大师赛中，作为南工骁鹰战队正式队员参与机器人底盘结构设计与装配，团队荣获全国二等奖。',
       badge: 'SolidWorks 专家级建模'
     },
     projects: {
       heading: '项目作品',
       all: '全部',
-      suspension: '摩托车悬挂',
       damper: '减震器',
+      suspension: '摩托车悬挂',
       industrial: '工业设计',
-      competition: '比赛',
-      robot: '机器人'
+      exoskeleton: '外骨骼'
     },
     skills: {
       heading: '技能',
@@ -48,15 +49,18 @@ const content = {
     },
     experience: {
       heading: '经历',
-      i1tag: '兼职项目',
-      i1title: '美国客户减震器联板设计',
-      i1desc: '独立完成摩托车减震器上下联板零件设计。根据客户规格从零建模，输出 STEP 工程文件交付美国客户制造，涵盖右前叉、左前叉、方向柱、联板等多个关键部件。',
-      i2tag: '比赛项目',
-      i2title: '螺旋桨叶片设计',
-      i2desc: '使用 SolidWorks 高级曲面功能进行螺旋桨叶片参数化建模，生成精确工程图纸用于 CFD 仿真验证。',
+      i1tag: 'RoboMaster',
+      i1title: '南工骁鹰战队 · 2024 机甲大师赛全国二等奖',
+      i1desc: '作为正式队员参与机器人底盘结构设计与装配调试。团队在全国大学生机器人大赛 RoboMaster 2024 机甲大师赛中荣获全国二等奖。',
+      i2tag: '兼职项目',
+      i2title: '德国客户 — 摩托车减震器零部件设计',
+      i2desc: '独立完成摩托车减震器上下联板、方向柱、左右前叉等关键零部件设计。根据客户规格从零建模，输出 STEP 工程文件交付德国客户制造，涵盖零件建模、装配验证及图纸输出全流程。',
       i3tag: '年度项目',
       i3title: '可折叠家具 — 大一年度创新项目',
-      i3desc: '设计可折叠收纳家具方案，完成从概念草图到三维建模、工程图纸及中期/结题报告全过程，获年度项目立项支持。'
+      i3desc: '大一期间主导可折叠收纳家具设计项目，获年度创新项目立项支持。完成从用户调研、概念草图、SolidWorks 三维建模到工程图纸的全流程设计，顺利通过中期检查与结题答辩，成果获评优秀。',
+      i4tag: '学生工作',
+      i4title: '青年志愿者协会义卖部副部长',
+      i4desc: '负责校园义卖活动的文创产品策划、供应商对接及现场组织，协调部门成员完成多次大型义卖活动。'
     },
     contact: {
       heading: '联系',
@@ -88,19 +92,19 @@ const content = {
     },
     about: {
       heading: 'About',
-      p1: 'Junior Robotics Engineering student at Harbin Institute of Technology, Shenzhen, with a focus on mechanical design and 3D modeling.',
-      p2: 'Proficient in SolidWorks modeling, assembly design, and engineering drawing. Project experience spans motorcycle suspension systems, shock absorber reverse engineering, exoskeleton robotics, and industrial product design.',
-      p3: 'Independently designed and delivered damper linkage components for a US client — full workflow from 3D modeling to manufacturing-ready STEP files. Experienced in international collaboration and engineering execution.',
+      p1: 'Junior Robotics Engineering student at Harbin Institute of Technology, Shenzhen. Vice Minister of the HIT Youth Volunteer Association Charity Sale Department and official member of the Nan Gong Xiao Ying (南工骁鹰) RoboMaster team.',
+      p2: 'Proficient in SolidWorks modeling, assembly design, and engineering drawings. Project experience spans motorcycle suspension and damper systems (for a German client), exoskeleton robotics, industrial product design, and foldable furniture.',
+      p3: 'Independently designed and delivered damper linkage components (upper/lower clamps, steering column) for a German client — from 3D modeling to STEP file delivery. Experienced in international collaboration and engineering execution.',
+      p4: 'Participated in the RoboMaster 2024 competition as an official member of the Nan Gong Xiao Ying team, contributing to robot chassis design and assembly. The team won National Second Prize.',
       badge: 'SolidWorks Expert'
     },
     projects: {
       heading: 'Projects',
       all: 'All',
-      suspension: 'Suspension',
       damper: 'Damper',
+      suspension: 'Suspension',
       industrial: 'Industrial',
-      competition: 'Competition',
-      robot: 'Robotics'
+      exoskeleton: 'Exoskeleton'
     },
     skills: {
       heading: 'Skills',
@@ -115,15 +119,18 @@ const content = {
     },
     experience: {
       heading: 'Experience',
-      i1tag: 'Freelance Project',
-      i1title: 'US Client — Motorcycle Damper Clamp Design',
-      i1desc: 'Independently designed upper and lower clamp components for motorcycle shock absorbers. Modeled from specifications, delivered STEP files for US-based manufacturing. Covered right/left fork clamps, steering column, and linkage plates.',
-      i2tag: 'Competition',
-      i2title: 'Propeller Blade Design',
-      i2desc: 'Parametric modeling of propeller blades using advanced SolidWorks surfacing. Generated precise engineering drawings for CFD simulation and validation.',
+      i1tag: 'RoboMaster',
+      i1title: 'Nan Gong Xiao Ying · RoboMaster 2024 National 2nd Prize',
+      i1desc: 'Official team member responsible for robot chassis structural design and assembly. The team won National Second Prize in the RoboMaster 2024 University Robotics Competition.',
+      i2tag: 'Freelance Project',
+      i2title: 'German Client — Motorcycle Damper Component Design',
+      i2desc: 'Independently designed key motorcycle damper components including upper/lower clamps, steering column, and left/right fork assemblies. Modeled from client specifications and delivered STEP files for manufacturing in Germany. Full workflow from part modeling to assembly verification and drawing output.',
       i3tag: 'Year One Project',
       i3title: 'Foldable Furniture — Annual Innovation Project',
-      i3desc: 'Designed foldable storage furniture from concept sketches through 3D modeling, engineering drawings, and mid-term/final reports. Received annual project funding support.'
+      i3desc: 'Led a foldable storage furniture design project in freshman year, receiving annual innovation project funding. Completed the full design workflow from user research and concept sketching through SolidWorks 3D modeling and engineering drawings. Passed mid-term review and final defense with excellent results.',
+      i4tag: 'Student Leadership',
+      i4title: 'Youth Volunteer Association — Vice Minister of Charity Sale Dept.',
+      i4desc: 'Planned campus charity sale events including cultural product design, vendor coordination, and on-site management. Coordinated team members to successfully execute multiple large-scale fundraising events.'
     },
     contact: {
       heading: 'Contact',
@@ -150,8 +157,8 @@ const projects = [
     catEn: 'Damper',
     titleZh: '后避震器透视装配',
     titleEn: 'Rear Shock — Cross-Section Assembly',
-    descZh: '598UA 减震器透视装配渲染，展现内部油阀、活塞及弹簧结构。',
-    descEn: 'Transparent assembly render of 598UA shock absorber, revealing internal oil valve, piston, and spring mechanisms.',
+    descZh: '598UA 减震器透视装配渲染，展现内部油阀、活塞及弹簧结构。为德国客户设计。',
+    descEn: 'Transparent assembly render of 598UA shock absorber for a German client, revealing internal oil valve, piston, and spring mechanisms.',
     thumb: 'images/thumb-01.webp',
     full: 'images/project-01.webp'
   },
@@ -162,8 +169,8 @@ const projects = [
     catEn: 'Suspension',
     titleZh: '方向柱总成',
     titleEn: 'Steering Column Assembly',
-    descZh: '摩托车前叉方向柱完整装配体渲染，含上下联板及轴承组件。',
-    descEn: 'Complete motorcycle steering column assembly render with upper/lower clamps and bearing components.',
+    descZh: '摩托车前叉方向柱完整装配体渲染，含上下联板及轴承组件。为德国客户设计的摩托车悬挂系统零部件。',
+    descEn: 'Complete motorcycle steering column assembly render with upper/lower clamps and bearing components, designed for a German client.',
     thumb: 'images/thumb-02.webp',
     full: 'images/project-02.webp'
   },
@@ -174,8 +181,8 @@ const projects = [
     catEn: 'Industrial',
     titleZh: '鼠标外观设计',
     titleEn: 'Mouse — Industrial Design',
-    descZh: '人体工学鼠标外观设计渲染，探索曲面造型与功能结合。',
-    descEn: 'Ergonomic mouse design render exploring the integration of surfacing and functionality.',
+    descZh: '人体工学鼠标外观设计渲染，探索曲面造型与功能结合。SolidWorks 建模 + KeyShot 渲染。',
+    descEn: 'Ergonomic mouse design render exploring the integration of surfacing and functionality. SolidWorks + KeyShot.',
     thumb: 'images/thumb-03.webp',
     full: 'images/project-03.webp'
   },
@@ -184,36 +191,24 @@ const projects = [
     category: 'industrial',
     catZh: '工业设计',
     catEn: 'Industrial',
-    titleZh: '花瓶曲面造型',
-    titleEn: 'Vase — Parametric Surfacing',
-    descZh: '参数化曲面造型练习，通过 Grasshopper + SolidWorks 生成花瓶形态。',
-    descEn: 'Parametric surface modeling exercise using Grasshopper and SolidWorks for vase form generation.',
+    titleZh: '花瓶 — Grasshopper + Rhino 参数化曲面',
+    titleEn: 'Vase — Parametric Surfacing (Rhino + GH)',
+    descZh: '通过 Grasshopper 参数化 + Rhino 曲面建模生成花瓶形态，探索算法驱动设计的可能性。',
+    descEn: 'Parametric surface modeling with Grasshopper and Rhino for vase form generation — exploring algorithm-driven design.',
     thumb: 'images/thumb-04.webp',
     full: 'images/project-04.webp'
   },
   {
     id: 'p05',
-    category: 'suspension',
-    catZh: '摩托车悬挂',
-    catEn: 'Suspension',
-    titleZh: '前减震器左装配',
-    titleEn: 'Front Fork — Left Assembly',
-    descZh: '598UA 前减震器左侧完整装配体，包含叉管、弹簧、油封等完整组件。',
-    descEn: 'Full left-side assembly of 598UA front fork, including fork tubes, springs, and oil seals.',
+    category: 'exoskeleton',
+    catZh: '外骨骼',
+    catEn: 'Exoskeleton',
+    titleZh: '外骨骼座椅',
+    titleEn: 'Exoskeleton Chair',
+    descZh: '可穿戴外骨骼座椅设计，SolidWorks 建模 + 3D 打印原型验证。探索人机工程与外骨骼结构的融合。',
+    descEn: 'Wearable exoskeleton chair design with SolidWorks modeling and 3D-printed prototype validation. Exploring the integration of ergonomics and exoskeleton structures.',
     thumb: 'images/thumb-05.webp',
     full: 'images/project-05.webp'
-  },
-  {
-    id: 'p06',
-    category: 'competition',
-    catZh: '比赛',
-    catEn: 'Competition',
-    titleZh: '螺旋桨叶片设计',
-    titleEn: 'Propeller Blade Design',
-    descZh: '比赛用螺旋桨叶片参数化设计，利用 SolidWorks 高级曲面建模生成精确工程图纸。',
-    descEn: 'Competition propeller blade parametric design with advanced SolidWorks surfacing and precise engineering drawings.',
-    thumb: 'images/thumb-06.webp',
-    full: 'images/project-06.webp'
   }
 ];
 
@@ -258,7 +253,7 @@ function renderFilters() {
     { key: 'damper', zh: content.zh.projects.damper, en: content.en.projects.damper },
     { key: 'suspension', zh: content.zh.projects.suspension, en: content.en.projects.suspension },
     { key: 'industrial', zh: content.zh.projects.industrial, en: content.en.projects.industrial },
-    { key: 'competition', zh: content.zh.projects.competition, en: content.en.projects.competition }
+    { key: 'exoskeleton', zh: content.zh.projects.exoskeleton, en: content.en.projects.exoskeleton }
   ];
 
   bar.innerHTML = cats.map(c =>
@@ -331,7 +326,6 @@ function navigateLightbox(dir) {
 
   if (filtered.length === 0) return;
 
-  // Find current project in filtered list
   const currentId = projects[currentProjectIndex].id;
   const filteredIdx = filtered.findIndex(p => p.id === currentId);
 
@@ -379,7 +373,6 @@ function observeReveal() {
   revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        // Stagger: delay based on index among siblings
         const siblings = Array.from(entry.target.parentNode.children)
           .filter(c => c.classList.contains('reveal'));
         const idx = siblings.indexOf(entry.target);
@@ -401,14 +394,12 @@ function updateNavOnScroll() {
   const nav = document.getElementById('nav');
   const heroBottom = document.getElementById('hero').offsetHeight;
 
-  // Nav background
   if (window.scrollY > heroBottom - 80) {
     nav.classList.add('scrolled');
   } else {
     nav.classList.remove('scrolled');
   }
 
-  // Active link
   const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
   const scrollPos = window.scrollY + 120;
 
@@ -432,7 +423,6 @@ document.getElementById('menu-btn').addEventListener('click', () => {
   document.getElementById('nav-links').classList.toggle('open');
 });
 
-// Close mobile menu on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('nav-links').classList.remove('open');
