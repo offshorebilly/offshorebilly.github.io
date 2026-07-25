@@ -1,7 +1,6 @@
 /* ============================================================
    Zhou Chenlin — Personal Website
-   JS: i18n, gallery, lightbox, scroll animations
-   Updated: German client, RoboMaster, YVA, exoskeleton project
+   JS: i18n, multi-image gallery, lightbox, scroll animations
    ============================================================ */
 
 // -------- i18n Content Data --------
@@ -23,7 +22,7 @@ const content = {
     about: {
       heading: '关于我',
       p1: '哈尔滨工业大学（深圳）机器人工程专业大三学生，专注于机械设计与三维建模。现任校青年志愿者协会义卖部副部长，南工骁鹰机器人战队正式队员。',
-      p2: '精通 SolidWorks 建模、装配体设计及工程图纸输出。项目经验涵盖摩托车悬挂系统与减震器设计（德国客户）、外骨骼机器人、工业产品设计、可折叠家具等多个领域。',
+      p2: '精通 SolidWorks 建模、装配体设计及工程图纸输出。项目经验涵盖摩托车悬挂系统与减震器设计（德国客户）、外骨骼机器人、工业产品设计、螺旋桨叶片数控加工、可折叠家具等多个领域。',
       p3: '曾为德国客户独立完成减震器上下联板等关键零部件设计，从三维建模到制造交付（STEP 文件）全流程负责，具备国际协作与工程落地能力。',
       p4: '在 2024 年 RoboMaster 机甲大师赛中，作为南工骁鹰战队正式队员参与机器人底盘结构设计与装配，团队荣获全国二等奖。',
       badge: 'SolidWorks 专家级建模'
@@ -34,7 +33,8 @@ const content = {
       damper: '减震器',
       suspension: '摩托车悬挂',
       industrial: '工业设计',
-      exoskeleton: '外骨骼'
+      exoskeleton: '外骨骼',
+      competition: '螺旋桨'
     },
     skills: {
       heading: '技能',
@@ -42,8 +42,8 @@ const content = {
       s1desc: '零件建模 · 装配体 · 工程图 · 曲面造型 · 运动仿真',
       s2name: 'KeyShot / 渲染',
       s2desc: '产品级渲染 · 材质与光照 · 透视截面展示',
-      s3name: '工程制图',
-      s3desc: '工程图纸 · GD&T · STEP/STL 格式转换',
+      s3name: 'SolidCAM / 数控加工',
+      s3desc: 'CNC 刀路设计 · 五轴加工编程 · 后处理',
       s4name: '原型制造',
       s4desc: '3D 打印 · CNC 加工 · 装配验证'
     },
@@ -69,11 +69,6 @@ const content = {
     footer: {
       copy: '© 2026 Zhou Chenlin. All rights reserved.',
       school: '哈尔滨工业大学（深圳）· 机器人工程'
-    },
-    lightbox: {
-      close: '关闭',
-      prev: '上一张',
-      next: '下一张'
     }
   },
   en: {
@@ -92,8 +87,8 @@ const content = {
     },
     about: {
       heading: 'About',
-      p1: 'Junior Robotics Engineering student at Harbin Institute of Technology, Shenzhen. Vice Minister of the HIT Youth Volunteer Association Charity Sale Department and official member of the Nan Gong Xiao Ying (南工骁鹰) RoboMaster team.',
-      p2: 'Proficient in SolidWorks modeling, assembly design, and engineering drawings. Project experience spans motorcycle suspension and damper systems (for a German client), exoskeleton robotics, industrial product design, and foldable furniture.',
+      p1: 'Junior Robotics Engineering student at Harbin Institute of Technology, Shenzhen. Vice Minister of the HIT Youth Volunteer Association Charity Sale Department and official member of the Nan Gong Xiao Ying RoboMaster team.',
+      p2: 'Proficient in SolidWorks modeling, assembly design, and engineering drawings. Project experience spans motorcycle suspension and damper systems (for a German client), exoskeleton robotics, industrial product design, propeller blade CNC machining, and foldable furniture.',
       p3: 'Independently designed and delivered damper linkage components (upper/lower clamps, steering column) for a German client — from 3D modeling to STEP file delivery. Experienced in international collaboration and engineering execution.',
       p4: 'Participated in the RoboMaster 2024 competition as an official member of the Nan Gong Xiao Ying team, contributing to robot chassis design and assembly. The team won National Second Prize.',
       badge: 'SolidWorks Expert'
@@ -104,7 +99,8 @@ const content = {
       damper: 'Damper',
       suspension: 'Suspension',
       industrial: 'Industrial',
-      exoskeleton: 'Exoskeleton'
+      exoskeleton: 'Exoskeleton',
+      competition: 'Propeller'
     },
     skills: {
       heading: 'Skills',
@@ -112,8 +108,8 @@ const content = {
       s1desc: 'Part modeling · Assemblies · Drawings · Surfacing · Motion simulation',
       s2name: 'KeyShot / Rendering',
       s2desc: 'Product rendering · Materials & lighting · Cross-section views',
-      s3name: 'Engineering Drawing',
-      s3desc: 'Technical drawings · GD&T · STEP/STL format conversion',
+      s3name: 'SolidCAM / CNC',
+      s3desc: 'CNC toolpath design · 5-axis programming · Post-processing',
       s4name: 'Prototyping',
       s4desc: '3D printing · CNC machining · Assembly verification'
     },
@@ -124,10 +120,10 @@ const content = {
       i1desc: 'Official team member responsible for robot chassis structural design and assembly. The team won National Second Prize in the RoboMaster 2024 University Robotics Competition.',
       i2tag: 'Freelance Project',
       i2title: 'German Client — Motorcycle Damper Component Design',
-      i2desc: 'Independently designed key motorcycle damper components including upper/lower clamps, steering column, and left/right fork assemblies. Modeled from client specifications and delivered STEP files for manufacturing in Germany. Full workflow from part modeling to assembly verification and drawing output.',
+      i2desc: 'Independently designed key motorcycle damper components including upper/lower clamps, steering column, and left/right fork assemblies. Modeled from client specifications and delivered STEP files for manufacturing in Germany.',
       i3tag: 'Year One Project',
       i3title: 'Foldable Furniture — Annual Innovation Project',
-      i3desc: 'Led a foldable storage furniture design project in freshman year, receiving annual innovation project funding. Completed the full design workflow from user research and concept sketching through SolidWorks 3D modeling and engineering drawings. Passed mid-term review and final defense with excellent results.',
+      i3desc: 'Led a foldable storage furniture design project in freshman year, receiving annual innovation project funding. Completed the full design workflow from user research through 3D modeling and engineering drawings. Passed mid-term review and final defense with excellent results.',
       i4tag: 'Student Leadership',
       i4title: 'Youth Volunteer Association — Vice Minister of Charity Sale Dept.',
       i4desc: 'Planned campus charity sale events including cultural product design, vendor coordination, and on-site management. Coordinated team members to successfully execute multiple large-scale fundraising events.'
@@ -139,16 +135,11 @@ const content = {
     footer: {
       copy: '© 2026 Zhou Chenlin. All rights reserved.',
       school: 'HIT Shenzhen · Robotics Engineering'
-    },
-    lightbox: {
-      close: 'Close',
-      prev: 'Previous',
-      next: 'Next'
     }
   }
 };
 
-// -------- Project Data --------
+// -------- Project Data (multi-image per project) --------
 const projects = [
   {
     id: 'p01',
@@ -159,8 +150,10 @@ const projects = [
     titleEn: 'Rear Shock — Cross-Section Assembly',
     descZh: '598UA 减震器透视装配渲染，展现内部油阀、活塞及弹簧结构。为德国客户设计。',
     descEn: 'Transparent assembly render of 598UA shock absorber for a German client, revealing internal oil valve, piston, and spring mechanisms.',
-    thumb: 'images/thumb-01.webp',
-    full: 'images/project-01.webp'
+    images: [
+      { full: 'images/project-01.webp', thumb: 'images/thumb-01.webp',
+        capZh: '598UA 后避震器透视装配渲染', capEn: '598UA Rear shock transparent assembly render' }
+    ]
   },
   {
     id: 'p02',
@@ -171,8 +164,10 @@ const projects = [
     titleEn: 'Steering Column Assembly',
     descZh: '摩托车前叉方向柱完整装配体渲染，含上下联板及轴承组件。为德国客户设计的摩托车悬挂系统零部件。',
     descEn: 'Complete motorcycle steering column assembly render with upper/lower clamps and bearing components, designed for a German client.',
-    thumb: 'images/thumb-02.webp',
-    full: 'images/project-02.webp'
+    images: [
+      { full: 'images/project-02.webp', thumb: 'images/thumb-02.webp',
+        capZh: '方向柱完整装配体', capEn: 'Steering column complete assembly' }
+    ]
   },
   {
     id: 'p03',
@@ -183,8 +178,10 @@ const projects = [
     titleEn: 'Mouse — Industrial Design',
     descZh: '人体工学鼠标外观设计渲染，探索曲面造型与功能结合。SolidWorks 建模 + KeyShot 渲染。',
     descEn: 'Ergonomic mouse design render exploring the integration of surfacing and functionality. SolidWorks + KeyShot.',
-    thumb: 'images/thumb-03.webp',
-    full: 'images/project-03.webp'
+    images: [
+      { full: 'images/project-03.webp', thumb: 'images/thumb-03.webp',
+        capZh: '鼠标外观设计渲染', capEn: 'Mouse industrial design render' }
+    ]
   },
   {
     id: 'p04',
@@ -195,8 +192,10 @@ const projects = [
     titleEn: 'Vase — Parametric Surfacing (Rhino + GH)',
     descZh: '通过 Grasshopper 参数化 + Rhino 曲面建模生成花瓶形态，探索算法驱动设计的可能性。',
     descEn: 'Parametric surface modeling with Grasshopper and Rhino for vase form generation — exploring algorithm-driven design.',
-    thumb: 'images/thumb-04.webp',
-    full: 'images/project-04.webp'
+    images: [
+      { full: 'images/project-04.webp', thumb: 'images/thumb-04.webp',
+        capZh: 'Grasshopper + Rhino 参数化花瓶', capEn: 'Grasshopper + Rhino parametric vase' }
+    ]
   },
   {
     id: 'p05',
@@ -206,17 +205,45 @@ const projects = [
     titleZh: '外骨骼座椅',
     titleEn: 'Exoskeleton Chair',
     descZh: '可穿戴外骨骼座椅设计，SolidWorks 建模 + 3D 打印原型验证。探索人机工程与外骨骼结构的融合。',
-    descEn: 'Wearable exoskeleton chair design with SolidWorks modeling and 3D-printed prototype validation. Exploring the integration of ergonomics and exoskeleton structures.',
-    thumb: 'images/thumb-05.webp',
-    full: 'images/project-05.webp'
+    descEn: 'Wearable exoskeleton chair design with SolidWorks modeling and 3D-printed prototype validation.',
+    images: [
+      { full: 'images/project-05.webp', thumb: 'images/thumb-05.webp',
+        capZh: '外骨骼座椅渲染图', capEn: 'Exoskeleton chair render' }
+    ]
+  },
+  {
+    id: 'p06',
+    category: 'competition',
+    catZh: '螺旋桨',
+    catEn: 'Propeller',
+    titleZh: '螺旋桨叶片 — 五轴 CNC 加工',
+    titleEn: 'Propeller Blade — 5-Axis CNC Machining',
+    descZh: 'SolidWorks 参数化建模 + SolidCAM 五轴数控刀路设计，CNC 加工验证。同时为该比赛设计了船体模型并完成桨叶装配。',
+    descEn: 'SolidWorks parametric modeling + SolidCAM 5-axis CNC toolpath design with machining verification. Also designed the hull model for the competition with propeller assembly.',
+    images: [
+      { full: 'images/project-06-01.webp', thumb: 'images/thumb-06.webp',
+        capZh: '螺旋桨叶片 SolidWorks 建模', capEn: 'Propeller blade — SolidWorks model' },
+      { full: 'images/project-06-02.webp',
+        capZh: 'SolidCAM 五轴数控铣削刀路设计', capEn: 'SolidCAM 5-axis CNC milling toolpath' },
+      { full: 'images/project-06-03.webp',
+        capZh: '比赛船体建模 + 桨叶装配', capEn: 'Competition hull model with propeller assembly' },
+      { full: 'images/project-06-04.webp',
+        capZh: '桨叶工程图纸', capEn: 'Propeller engineering drawing' }
+    ]
   }
 ];
 
 // -------- State --------
 let currentLang = localStorage.getItem('lang') || 'zh';
 let currentFilter = 'all';
-let currentProjectIndex = -1;
+let currentProjectId = null;
+let currentImageIndex = 0;
 let lightboxOpen = false;
+
+// -------- Helper --------
+function t(obj, lang) {
+  return lang === 'zh' ? obj.zh : obj.en;
+}
 
 // -------- i18n Engine --------
 function applyLanguage(lang) {
@@ -236,24 +263,24 @@ function applyLanguage(lang) {
     }
   });
 
-  // Update lang toggle button text
   const toggle = document.getElementById('lang-toggle');
   if (toggle) toggle.textContent = lang === 'zh' ? 'EN' : '中';
 
-  // Re-render gallery and filters to update text
   renderFilters();
   renderGallery();
+  if (lightboxOpen) updateLightboxContent();
 }
 
 // -------- Gallery --------
 function renderFilters() {
   const bar = document.getElementById('filter-bar');
   const cats = [
-    { key: 'all', zh: content.zh.projects.all, en: content.en.projects.all },
-    { key: 'damper', zh: content.zh.projects.damper, en: content.en.projects.damper },
-    { key: 'suspension', zh: content.zh.projects.suspension, en: content.en.projects.suspension },
-    { key: 'industrial', zh: content.zh.projects.industrial, en: content.en.projects.industrial },
-    { key: 'exoskeleton', zh: content.zh.projects.exoskeleton, en: content.en.projects.exoskeleton }
+    { key: 'all',         zh: content.zh.projects.all,         en: content.en.projects.all },
+    { key: 'damper',      zh: content.zh.projects.damper,      en: content.en.projects.damper },
+    { key: 'suspension',  zh: content.zh.projects.suspension,  en: content.en.projects.suspension },
+    { key: 'industrial',  zh: content.zh.projects.industrial,  en: content.en.projects.industrial },
+    { key: 'exoskeleton', zh: content.zh.projects.exoskeleton, en: content.en.projects.exoskeleton },
+    { key: 'competition', zh: content.zh.projects.competition, en: content.en.projects.competition }
   ];
 
   bar.innerHTML = cats.map(c =>
@@ -262,7 +289,6 @@ function renderFilters() {
     </button>`
   ).join('');
 
-  // Attach listeners
   bar.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       currentFilter = btn.dataset.filter;
@@ -278,33 +304,37 @@ function renderGallery() {
     ? projects
     : projects.filter(p => p.category === currentFilter);
 
-  gallery.innerHTML = filtered.map(p => `
+  gallery.innerHTML = filtered.map(p => {
+    const thumb = p.images[0].thumb;
+    return `
     <div class="gallery-card reveal" data-project-id="${p.id}">
-      <img src="${p.thumb}" alt="${currentLang === 'zh' ? p.titleZh : p.titleEn}" loading="lazy">
+      <img src="${thumb}" alt="${t({zh: p.titleZh, en: p.titleEn}, currentLang)}" loading="lazy">
       <div class="gallery-card-info">
-        <h3>${currentLang === 'zh' ? p.titleZh : p.titleEn}</h3>
-        <span class="card-cat">${currentLang === 'zh' ? p.catZh : p.catEn}</span>
+        <h3>${t({zh: p.titleZh, en: p.titleEn}, currentLang)}</h3>
+        <span class="card-cat">${t({zh: p.catZh, en: p.catEn}, currentLang)}</span>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 
-  // Attach click handlers
   gallery.querySelectorAll('.gallery-card').forEach(card => {
     card.addEventListener('click', () => {
-      const pid = card.dataset.projectId;
-      openLightbox(pid);
+      openLightbox(card.dataset.projectId);
     });
   });
 
-  // Re-observe new cards for scroll reveal
   observeReveal();
 }
 
-// -------- Lightbox --------
+// -------- Lightbox (multi-image per project) --------
+function getProjectById(id) {
+  return projects.find(p => p.id === id);
+}
+
 function openLightbox(projectId) {
-  const idx = projects.findIndex(p => p.id === projectId);
-  if (idx === -1) return;
-  currentProjectIndex = idx;
+  const proj = getProjectById(projectId);
+  if (!proj) return;
+  currentProjectId = projectId;
+  currentImageIndex = 0;
   updateLightboxContent();
   document.getElementById('lightbox').classList.add('open');
   document.getElementById('lightbox').setAttribute('aria-hidden', 'false');
@@ -317,39 +347,45 @@ function closeLightbox() {
   document.getElementById('lightbox').setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
   lightboxOpen = false;
+  currentProjectId = null;
 }
 
-function navigateLightbox(dir) {
-  const filtered = currentFilter === 'all'
-    ? projects
-    : projects.filter(p => p.category === currentFilter);
-
-  if (filtered.length === 0) return;
-
-  const currentId = projects[currentProjectIndex].id;
-  const filteredIdx = filtered.findIndex(p => p.id === currentId);
-
-  let newFilteredIdx = filteredIdx + dir;
-  if (newFilteredIdx < 0) newFilteredIdx = filtered.length - 1;
-  if (newFilteredIdx >= filtered.length) newFilteredIdx = 0;
-
-  currentProjectIndex = projects.findIndex(p => p.id === filtered[newFilteredIdx].id);
+function navigateImage(dir) {
+  const proj = getProjectById(currentProjectId);
+  if (!proj) return;
+  const n = proj.images.length;
+  currentImageIndex = (currentImageIndex + dir + n) % n;
   updateLightboxContent();
 }
 
 function updateLightboxContent() {
-  const p = projects[currentProjectIndex];
-  document.getElementById('lightbox-img').src = p.full;
-  document.getElementById('lightbox-img').alt = currentLang === 'zh' ? p.titleZh : p.titleEn;
-  document.getElementById('lightbox-title').textContent = currentLang === 'zh' ? p.titleZh : p.titleEn;
-  document.getElementById('lightbox-desc').textContent = currentLang === 'zh' ? p.descZh : p.descEn;
-  document.getElementById('lightbox-cat').textContent = currentLang === 'zh' ? p.catZh : p.catEn;
+  const proj = getProjectById(currentProjectId);
+  if (!proj) return;
+  const img = proj.images[currentImageIndex];
+  const n = proj.images.length;
+
+  document.getElementById('lightbox-img').src = img.full;
+  document.getElementById('lightbox-img').alt = t({zh: proj.titleZh, en: proj.titleEn}, currentLang);
+  document.getElementById('lightbox-title').textContent = t({zh: proj.titleZh, en: proj.titleEn}, currentLang);
+  document.getElementById('lightbox-cat').textContent = t({zh: proj.catZh, en: proj.catEn}, currentLang);
+
+  // Per-image caption (falls back to project description)
+  const capEl = document.getElementById('lightbox-desc');
+  if (img.capZh && img.capEn) {
+    capEl.textContent = t({zh: img.capZh, en: img.capEn}, currentLang);
+  } else {
+    capEl.textContent = t({zh: proj.descZh, en: proj.descEn}, currentLang);
+  }
+
+  // Image counter "2 / 4" (only show when > 1 image)
+  document.getElementById('lightbox-counter').textContent =
+    n > 1 ? `${currentImageIndex + 1} / ${n}` : '';
 }
 
 // Lightbox event listeners
 document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-document.getElementById('lightbox-prev').addEventListener('click', () => navigateLightbox(-1));
-document.getElementById('lightbox-next').addEventListener('click', () => navigateLightbox(1));
+document.getElementById('lightbox-prev').addEventListener('click', () => navigateImage(-1));
+document.getElementById('lightbox-next').addEventListener('click', () => navigateImage(1));
 
 // Click outside image to close
 document.getElementById('lightbox').addEventListener('click', (e) => {
@@ -359,25 +395,35 @@ document.getElementById('lightbox').addEventListener('click', (e) => {
 // Keyboard: Escape, arrows
 document.addEventListener('keydown', (e) => {
   if (!lightboxOpen) return;
-  if (e.key === 'Escape') closeLightbox();
-  if (e.key === 'ArrowLeft') navigateLightbox(-1);
-  if (e.key === 'ArrowRight') navigateLightbox(1);
+  if (e.key === 'Escape') { closeLightbox(); return; }
+  if (e.key === 'ArrowLeft')  { navigateImage(-1); return; }
+  if (e.key === 'ArrowRight') { navigateImage(1); return; }
 });
 
-// -------- Scroll Reveal (Intersection Observer) --------
+// Touch swipe on lightbox
+let touchStartX = 0;
+document.getElementById('lightbox').addEventListener('touchstart', (e) => {
+  touchStartX = e.touches[0].clientX;
+}, { passive: true });
+document.getElementById('lightbox').addEventListener('touchend', (e) => {
+  if (!lightboxOpen) return;
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) navigateImage(diff > 0 ? 1 : -1);
+});
+
+// -------- Scroll Reveal --------
 let revealObserver;
 
 function observeReveal() {
   if (revealObserver) revealObserver.disconnect();
 
   revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const siblings = Array.from(entry.target.parentNode.children)
           .filter(c => c.classList.contains('reveal'));
         const idx = siblings.indexOf(entry.target);
         const delay = Math.min(idx * 80, 500);
-
         setTimeout(() => {
           entry.target.classList.add('revealed');
         }, delay);
@@ -389,7 +435,7 @@ function observeReveal() {
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 }
 
-// -------- Nav Scroll Spy + Background --------
+// -------- Nav Scroll Spy --------
 function updateNavOnScroll() {
   const nav = document.getElementById('nav');
   const heroBottom = document.getElementById('hero').offsetHeight;
@@ -402,27 +448,22 @@ function updateNavOnScroll() {
 
   const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
   const scrollPos = window.scrollY + 120;
-
   let activeId = 'hero';
   for (const id of sections) {
     const el = document.getElementById(id);
-    if (el && el.offsetTop <= scrollPos) {
-      activeId = id;
-    }
+    if (el && el.offsetTop <= scrollPos) activeId = id;
   }
 
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.classList.toggle('active', link.getAttribute('href') === `#${activeId}`);
   });
 }
-
 window.addEventListener('scroll', updateNavOnScroll, { passive: true });
 
 // -------- Mobile Menu --------
 document.getElementById('menu-btn').addEventListener('click', () => {
   document.getElementById('nav-links').classList.toggle('open');
 });
-
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('nav-links').classList.remove('open');
@@ -446,14 +487,12 @@ function init() {
   observeReveal();
   updateNavOnScroll();
 
-  // Language toggle button
   document.getElementById('lang-toggle').addEventListener('click', () => {
     const next = currentLang === 'zh' ? 'en' : 'zh';
     applyLanguage(next);
   });
 }
 
-// Start when DOM is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', init);
 } else {

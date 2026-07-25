@@ -617,6 +617,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   max-width: 500px;
 }
 
+.lightbox-counter {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin-bottom: 0.5rem;
+}
+
 .lightbox-info h3 {
   font-size: 1.25rem;
   font-weight: 500;
