@@ -151,8 +151,16 @@ const projects = [
     descZh: '598UA 减震器透视装配渲染，展现内部油阀、活塞及弹簧结构。为德国客户设计。',
     descEn: 'Transparent assembly render of 598UA shock absorber for a German client, revealing internal oil valve, piston, and spring mechanisms.',
     images: [
-      { full: 'images/project-01.webp', thumb: 'images/thumb-01.webp',
-        capZh: '598UA 后避震器透视装配渲染', capEn: '598UA Rear shock transparent assembly render' }
+      { full: 'images/project-01-01.webp', thumb: 'images/thumb-01.webp',
+        capZh: '598UA 后避震器透视装配渲染', capEn: '598UA Rear shock transparent assembly render' },
+      { full: 'images/project-01-02.webp',
+        capZh: '前减震器左侧完整装配体，包含叉管、弹簧、油封等组件', capEn: 'Front fork left-side complete assembly with fork tubes, springs, and oil seals' },
+      { full: 'images/project-01-03.webp',
+        capZh: '前减震器右侧装配体渲染', capEn: 'Front fork right-side assembly render' },
+      { full: 'images/project-01-04.webp',
+        capZh: '减震器整体装配体效果图', capEn: 'Full damper assembly render' },
+      { full: 'images/project-01-05.webp',
+        capZh: '减震器上联板零件设计，为德国客户定制', capEn: 'Upper clamp plate design for German client' }
     ]
   },
   {
@@ -165,8 +173,16 @@ const projects = [
     descZh: '摩托车前叉方向柱完整装配体渲染，含上下联板及轴承组件。为德国客户设计的摩托车悬挂系统零部件。',
     descEn: 'Complete motorcycle steering column assembly render with upper/lower clamps and bearing components, designed for a German client.',
     images: [
-      { full: 'images/project-02.webp', thumb: 'images/thumb-02.webp',
-        capZh: '方向柱完整装配体', capEn: 'Steering column complete assembly' }
+      { full: 'images/project-02-01.webp', thumb: 'images/thumb-02.webp',
+        capZh: '方向柱完整装配体', capEn: 'Steering column complete assembly' },
+      { full: 'images/project-02-02.webp',
+        capZh: '摩托车前叉方向柱 — 视角2', capEn: 'Motorcycle fork steering column — angle 2' },
+      { full: 'images/project-02-03.webp',
+        capZh: '摩托车前叉方向柱 — 视角3', capEn: 'Motorcycle fork steering column — angle 3' },
+      { full: 'images/project-02-04.webp',
+        capZh: '方向柱细节特写', capEn: 'Steering column detail close-up' },
+      { full: 'images/project-02-05.webp',
+        capZh: '方向柱总成 — 含上下联板', capEn: 'Steering column assembly with upper/lower clamps' }
     ]
   },
   {
@@ -179,8 +195,10 @@ const projects = [
     descZh: '人体工学鼠标外观设计渲染，探索曲面造型与功能结合。SolidWorks 建模 + KeyShot 渲染。',
     descEn: 'Ergonomic mouse design render exploring the integration of surfacing and functionality. SolidWorks + KeyShot.',
     images: [
-      { full: 'images/project-03.webp', thumb: 'images/thumb-03.webp',
-        capZh: '鼠标外观设计渲染', capEn: 'Mouse industrial design render' }
+      { full: 'images/project-03-01.webp', thumb: 'images/thumb-03.webp',
+        capZh: '鼠标外观设计渲染', capEn: 'Mouse industrial design render' },
+      { full: 'images/project-03-02.webp',
+        capZh: '鼠标 — 另一个角度', capEn: 'Mouse — alternate angle' }
     ]
   },
   {
@@ -193,8 +211,18 @@ const projects = [
     descZh: '通过 Grasshopper 参数化 + Rhino 曲面建模生成花瓶形态，探索算法驱动设计的可能性。',
     descEn: 'Parametric surface modeling with Grasshopper and Rhino for vase form generation — exploring algorithm-driven design.',
     images: [
-      { full: 'images/project-04.webp', thumb: 'images/thumb-04.webp',
-        capZh: 'Grasshopper + Rhino 参数化花瓶', capEn: 'Grasshopper + Rhino parametric vase' }
+      { full: 'images/project-04-01.webp', thumb: 'images/thumb-04.webp',
+        capZh: 'Grasshopper + Rhino 参数化花瓶', capEn: 'Grasshopper + Rhino parametric vase' },
+      { full: 'images/project-04-02.webp',
+        capZh: '参数化花瓶 — 造型变体1', capEn: 'Parametric vase — variation 1' },
+      { full: 'images/project-04-03.webp',
+        capZh: '参数化花瓶 — 造型变体2', capEn: 'Parametric vase — variation 2' },
+      { full: 'images/project-04-04.webp',
+        capZh: '参数化花瓶 — 造型变体3', capEn: 'Parametric vase — variation 3' },
+      { full: 'images/project-04-05.webp',
+        capZh: '参数化花瓶 — 造型变体4', capEn: 'Parametric vase — variation 4' },
+      { full: 'images/project-04-06.webp',
+        capZh: '参数化花瓶 — 造型变体5', capEn: 'Parametric vase — variation 5' }
     ]
   },
   {
@@ -207,8 +235,16 @@ const projects = [
     descZh: '可穿戴外骨骼座椅设计，SolidWorks 建模 + 3D 打印原型验证。探索人机工程与外骨骼结构的融合。',
     descEn: 'Wearable exoskeleton chair design with SolidWorks modeling and 3D-printed prototype validation.',
     images: [
-      { full: 'images/project-05.webp', thumb: 'images/thumb-05.webp',
-        capZh: '外骨骼座椅渲染图', capEn: 'Exoskeleton chair render' }
+      { full: 'images/project-05-01.webp', thumb: 'images/thumb-05.webp',
+        capZh: '外骨骼座椅渲染图', capEn: 'Exoskeleton chair render' },
+      { full: 'images/project-05-02.webp',
+        capZh: '外骨骼座椅结构视图 — 正面', capEn: 'Exoskeleton chair — front view' },
+      { full: 'images/project-05-03.webp',
+        capZh: '外骨骼座椅结构视图 — 侧面', capEn: 'Exoskeleton chair — side view' },
+      { full: 'images/project-05-04.webp',
+        capZh: '外骨骼座椅结构视图 — 细节', capEn: 'Exoskeleton chair — detail view' },
+      { full: 'images/project-05-05.webp',
+        capZh: '外骨骼座椅 — 穿戴示意', capEn: 'Exoskeleton chair — wearing demonstration' }
     ]
   },
   {
