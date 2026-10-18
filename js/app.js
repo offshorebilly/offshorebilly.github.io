@@ -197,8 +197,6 @@ const projects = [
     images: [
       { full: 'images/project-03-04.webp', thumb: 'images/thumb-03.webp',
         capZh: '鼠标 — 视角4', capEn: 'Mouse — angle 4' },
-      { full: 'images/project-03-01.webp',
-        capZh: '鼠标外观设计渲染', capEn: 'Mouse industrial design render' },
       { full: 'images/project-03-02.webp',
         capZh: '鼠标 — 另一个角度', capEn: 'Mouse — alternate angle' },
       { full: 'images/project-03-03.webp',
@@ -206,7 +204,9 @@ const projects = [
       { full: 'images/project-03-05.webp',
         capZh: '鼠标 — 视角5', capEn: 'Mouse — angle 5' },
       { full: 'images/project-03-06.webp',
-        capZh: '鼠标 — 视角6', capEn: 'Mouse — angle 6' }
+        capZh: '鼠标 — 视角6', capEn: 'Mouse — angle 6' },
+      { full: 'images/project-03-01.webp',
+        capZh: '鼠标外观设计渲染', capEn: 'Mouse industrial design render' }
     ]
   },
   {
