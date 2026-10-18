@@ -195,10 +195,18 @@ const projects = [
     descZh: '人体工学鼠标外观设计渲染，探索曲面造型与功能结合。SolidWorks 建模 + KeyShot 渲染。',
     descEn: 'Ergonomic mouse design render exploring the integration of surfacing and functionality. SolidWorks + KeyShot.',
     images: [
-      { full: 'images/project-03-01.webp', thumb: 'images/thumb-03.webp',
+      { full: 'images/project-03-04.webp', thumb: 'images/thumb-03.webp',
+        capZh: '鼠标 — 视角4', capEn: 'Mouse — angle 4' },
+      { full: 'images/project-03-01.webp',
         capZh: '鼠标外观设计渲染', capEn: 'Mouse industrial design render' },
       { full: 'images/project-03-02.webp',
-        capZh: '鼠标 — 另一个角度', capEn: 'Mouse — alternate angle' }
+        capZh: '鼠标 — 另一个角度', capEn: 'Mouse — alternate angle' },
+      { full: 'images/project-03-03.webp',
+        capZh: '鼠标 — 视角3', capEn: 'Mouse — angle 3' },
+      { full: 'images/project-03-05.webp',
+        capZh: '鼠标 — 视角5', capEn: 'Mouse — angle 5' },
+      { full: 'images/project-03-06.webp',
+        capZh: '鼠标 — 视角6', capEn: 'Mouse — angle 6' }
     ]
   },
   {
